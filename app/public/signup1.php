@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Azubi Docker Log in </h1>
-    <form action="signup.php" method="post">
+    <form name="login" action="signup.php" method="post" autocomplete="off">
         <div>
             <label id="name" for="name" name="name">Username</label>
             <input type="text" name="name" placeholder="user name">
@@ -19,7 +19,8 @@
             <input id="password" type="password" name="password">
     </div>
     <div>
-        <button>Submit</button>
+        <p><input type="submit" name="submit" value="Submit"></p>
+        <!-- <button>Submit</button> -->
     </div>
     </form>
 </body>
