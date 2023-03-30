@@ -1,3 +1,5 @@
+<?php ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +11,7 @@
 </head>
 <body>
     <h1>Azubi Docker Log in </h1>
-    <form name="login" action="signup.php" method="post" autocomplete="off">
+    <form name="login" action="signup-valid.php" method="post" autocomplete="off">
         <div>
             <label id="name" for="name" name="name">Username</label>
             <input type="text" name="name" placeholder="user name">
@@ -20,7 +22,6 @@
     </div>
     <div>
         <p><input type="submit" name="submit" value="Submit"></p>
-        <!-- <button>Submit</button> -->
     </div>
     </form>
 </body>
