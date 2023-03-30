@@ -14,10 +14,14 @@
                 if ($userName !== 'johndoe' && $password !== '12345'){
 
                     print('Invalid username or password');
+                    header("Location: signup.php");
+                    
                 }else{
                     print('Welcome, This is admin!');
                 }
             }
     ?>
+    
+    
 </body>
 </html>
