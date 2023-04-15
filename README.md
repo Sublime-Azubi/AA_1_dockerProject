@@ -5,11 +5,14 @@ This project aims to dockerise a simple web php application that manages usesign
 
 subsequently we export the docker image from dicker hub to aws ECR and then be able run the container on an aws ECS cluster. AWS Fargate launch type will be used in this case.
 
-
-Applicaction is a simple phpapplication wish a php server-side scripting that processes the submission throuh a web form
+MVP: 
+The first version of this project is a simple php  web application with a php server-side scripting that processes the submission throuh a web form
 
 ![image](https://user-images.githubusercontent.com/104580680/228970260-6b6041a2-bdf8-446c-969b-91a454adf739.png)
 
+
+VERSION 2
+Ther version 2 of the application is a dockerised application. The next stage is a build a docker Immage of our exixting application such that is is easily shipped and deployed in any other enviroment with less opeartional over head
 
 #BUILD DOCKER IMAGE
 Created Dockerfile in the root directory using variant that contains a web server . php:<version>-cli – (php:8.0-apache)
@@ -29,10 +32,14 @@ Docker build command
 ##Pull the image using the docker build command.
 
   
-#Build, Tag and Push image to registry
+*#BUILDM TAG AND PUSH IMAGE TO REGISTRY*
+
 To build, tag and push docker image to Elastic Container registry, there are a few steps. The steps bellow highlights the steps to achieve this.
-  **- Create repository. (Private or public)**
+
+  **- CREATE REPOSITORY. (Private or public)**
+  
   **NOTE: AWS ECR allows the creation of private and public repositories. A private repository can be created in any region, while the public one can only be created in the region us-east-1.**
+  
 You can store your Docker image in a Private or public repository. The images pushed on a public repository can be pulled by anyone with the URI, while those on the private repository are restricted to people with permission to pull. Pushing images on a public repository is free, while on a private repository, you have 500MB of storage each month for one year
   
 **_In the project, we will be using a public repository.**_
