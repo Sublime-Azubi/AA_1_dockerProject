@@ -13,22 +13,22 @@ The first version of this project is a simple php  web application with a php se
 
 **VERSION 2**
 
-Ther version 2 of the application is a dockerised application. The next stage is a build a docker Immage of our exixting application such that is is easily shipped and deployed in any other enviroment with less opeartional over head
+The version 2 of the application is a dockerised application. The next stage is a build a docker Immage of our exixting application such that is is easily shipped and deployed in any other enviroment with less opeartional over head
 
 #BUILD DOCKER IMAGE
 Created Dockerfile in the root directory using variant that contains a web server . php:<version>-cli – (php:8.0-apache)
 Docker build command
   
-> docker build -t php-apache .
+_> docker build -t php-apache .
 >Run the Docker image
-> docker run -it --rm --name m-apache-app php-apache
+> docker run -it --rm --name m-apache-app php-apache_
 ![image](https://user-images.githubusercontent.com/104580680/228970922-b636cf38-d7d6-41ba-abdd-94a1cd76433b.png)
 
   #Push Docker Immage to Docker Hub
  To do this, we need to configure our local terminal with the docker id where i have to push the image.
   
-  $ docker image tag rhel-httpd:latest registry-host:5000/myadmin/rhel-httpd:latest 
-  $ docker image push registry-host:5000/myadmin/rhel-httpd:latest 
+ _ $ docker image tag rhel-httpd:latest registry-host:5000/myadmin/rhel-httpd:latest 
+  $ docker image push registry-host:5000/myadmin/rhel-httpd:latest _
   
 ##Pull the image using the docker build command.
 
