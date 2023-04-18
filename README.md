@@ -11,7 +11,8 @@ The first version of this project is a simple php  web application with a php se
 ![image](https://user-images.githubusercontent.com/104580680/228970260-6b6041a2-bdf8-446c-969b-91a454adf739.png)
 
 
-VERSION 2
+**VERSION 2**
+
 Ther version 2 of the application is a dockerised application. The next stage is a build a docker Immage of our exixting application such that is is easily shipped and deployed in any other enviroment with less opeartional over head
 
 #BUILD DOCKER IMAGE
@@ -73,6 +74,7 @@ We can now push the image on the repository using the AWS CLI in three steps:
 
   You can copy the URL of the image and be able to pull the image using the docker pull command.
 
-  
+**  VERSION 3**
+
   
   
