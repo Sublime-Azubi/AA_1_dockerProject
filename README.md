@@ -81,4 +81,4 @@ We can now push the image on the repository using the AWS CLI in three steps:
 
 ## VERSION 3
 
-  
+ 
