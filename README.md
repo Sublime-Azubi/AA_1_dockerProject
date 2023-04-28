@@ -1,4 +1,6 @@
+
 # AA_1_dockerProject
+
 This is Sublime docker docker project
 
 This project aims to dockerise a simple web php application that manages usesigning through a webform. 
@@ -11,11 +13,11 @@ The first version of this project is a simple php  web application with a php se
 ![image](https://user-images.githubusercontent.com/104580680/228970260-6b6041a2-bdf8-446c-969b-91a454adf739.png)
 
 
-**VERSION 2**
+# **VERSION 2**
 
 The version 2 of the application is a dockerised application. The next stage is a build a docker Immage of our exixting application such that is is easily shipped and deployed in any other enviroment with less opeartional over head
 
-#BUILD DOCKER IMAGE
+## BUILD DOCKER IMAGE
 Created Dockerfile in the root directory using variant that contains a web server . php:<version>-cli – (php:8.0-apache)
 Docker build command
   
@@ -24,13 +26,13 @@ _> docker build -t php-apache .
 > docker run -it --rm --name m-apache-app php-apache_
 ![image](https://user-images.githubusercontent.com/104580680/228970922-b636cf38-d7d6-41ba-abdd-94a1cd76433b.png)
 
-  #Push Docker Immage to Docker Hub
+  ## Push Docker Immage to Docker Hub
  To do this, we need to configure our local terminal with the docker id where i have to push the image.
   
  _ $ docker image tag rhel-httpd:latest registry-host:5000/myadmin/rhel-httpd:latest 
   $ docker image push registry-host:5000/myadmin/rhel-httpd:latest _
   
-##Pull the image using the docker build command.
+## Pull the image using the docker build command.
 
   
 *#BUILDM TAG AND PUSH IMAGE TO REGISTRY*
@@ -73,8 +75,10 @@ We can now push the image on the repository using the AWS CLI in three steps:
  That is it, Wait for the push to complete and check out the repository in the AWS console
 
   You can copy the URL of the image and be able to pull the image using the docker pull command.
-
-**  VERSION 3**
-
   
+  CONTINUED.......  
   
+
+## VERSION 3
+
+ 
